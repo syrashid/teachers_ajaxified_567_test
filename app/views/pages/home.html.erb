@@ -1,7 +1,7 @@
-<div class="d-flex justify-content-center mt-4">
-  <button type="button" class="btn btn-dark">
+<div class="d-flex justify-content-center mt-4" data-controller="counter">
+  <button type="button" class="btn btn-dark" data-action="click->counter#refresh">
     Refresh Counter
-    <span class="badge badge-light">
+    <span class="badge badge-light" data-counter-target="count">
       <%= @restaurant_count %>
     </span>
   </button>
